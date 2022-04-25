@@ -8,6 +8,7 @@
 
 :root {
   --background: #3e3f48;
+  --nav: #3e3e3e;
   --yellow: #fff800;
   --orange: #ff9900;
   --pink: #e5326b;
@@ -26,10 +27,12 @@ nav {
   left: 0;
   height: 100px;
   width: 100%;
-  background-color: var(--nav-color);
+  background-color: var(--nav);
   z-index: 1;
   font-family: "Inter", sans-serif;
   animation: fadeIn 1s ease-in;
+
+  padding: 80px 0px;
 }
 
 nav .nav-bar {
@@ -168,6 +171,7 @@ nav .nav-bar .logo img {
   display: block;
   margin-left: auto;
   margin-right: auto;
+  margin-top: 150px;
 }
 
 .buttons {
@@ -176,7 +180,7 @@ nav .nav-bar .logo img {
   gap: 100px;
 
   position: absolute;
-  bottom: 100px;
+  bottom: -50px;
   left: 520px;
 }
 
