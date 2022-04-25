@@ -1,0 +1,191 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+/*----------------- Colors ---------------*/
+
+:root{
+    --body-color: rgb(240, 240, 240);
+    --nav-color: rgb(240, 240, 240);
+    --side-nav: white;
+    --text-color: black;
+    --border-color: rgb(0, 0, 0); 
+    --search-bar: white;
+    --search-text: black;
+    --button-color: black;
+    --button-text: white;
+    --fill-color: rgb(233, 231, 231);
+    --button-hover: rgb(51, 51, 51);
+    
+
+}
+
+body{
+    
+    background-color: var(--body-color);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+
+nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 1; 
+    font-family: 'Inter', sans-serif; 
+    animation: fadeIn 1s ease-in;
+}
+
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    width: 100%; 
+    background-color: var(--nav-color); 
+    margin: 0 auto;
+    padding: 0 30px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+
+}
+
+nav .nav-bar .sidebarOpen{
+    color: var(--text-color);
+    font-size: 25px; 
+    padding: 5px; 
+    cursor: pointer; 
+    display: none; 
+}
+
+nav .nav-bar .logo a{
+    font-size: 40px; 
+    text-decoration: none;
+    font-weight: 500;
+    color: var(--text-color);
+    padding-left: 20px;
+    font-family: neue-haas-grotesk-display, sans-serif; 
+
+    
+}
+
+.menu .logo-toggle{
+  display: none; 
+}
+
+.side {
+    display: flex;
+}
+
+
+.nav-bar .nav-links{
+    display: flex;
+    animation: fadeInDown 2s;
+    margin-right: 20px;
+   
+}
+
+.nav-bar .nav-links li{
+    list-style: none; 
+    float: right;
+}
+
+.nav-links li a{
+    
+    text-decoration: none; 
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--text-color);
+    padding: 5px;
+   
+
+}
+
+.nav-links li a:hover {
+    text-decoration: underline;
+    transition: all 1s ease; 
+}
+
+
+
+.nav-bar .darkLight-searchBox{
+    display: flex;
+    align-items: center;
+}
+
+.darkLight-searchBox .dark-light,
+.darkLight-searchBox .searchBox{
+    height: 20px;
+    width: 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 5px; 
+}
+
+
+@media (max-width: 790px) {
+
+    nav .nav-bar .sidebarOpen{
+        display: block ; 
+    }
+    
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 320px;
+        left: -100%;
+        top: 0;
+        padding: 20px; 
+        background-color: var(--side-nav);
+        z-index: 1; 
+        transition: all 0.4s ease; 
+    }
+
+    nav.active .menu{
+        left: -0%;
+    }
+
+    .menu .logo-toggle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        justify-content:space-between; 
+    }
+
+    .logo-toggle .sidebarClose{
+        color: var(--text-color);
+        font-size: 24px; 
+        cursor: pointer; 
+
+    }
+
+    
+
+
+    .nav-bar .nav-links{
+        flex-direction: column;
+        padding-top: 30px; 
+    }
+
+    .nav-links li a{
+        display: block;
+        margin-top: 20px; 
+    }
+
+  
+
+    
+}
+
