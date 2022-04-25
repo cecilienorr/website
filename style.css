@@ -35,10 +35,11 @@ nav {
     left: 0;
     height: 100px;
     width: 100%;
-    background-color: var(--nav-color);
+    background-color: var(--background);
     z-index: 1; 
     font-family: 'Inter', sans-serif; 
     animation: fadeIn 1s ease-in;
+    padding: 80px 0px;
 }
 
 nav .nav-bar{
@@ -155,6 +156,7 @@ p {
       padding-left: 98px;
       padding-right: 98px;
       margin-top: 20px;
+      margin-bottom: 70px;
       
   }
 
@@ -425,7 +427,20 @@ p {
 
 
 
+footer p {
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+    font-size: 14px;
+}
 
+footer {
+    border-top: 1px solid var(--yellow);
+    border-bottom: 1px solid var(--yellow);
+    margin-left: 98px;
+    margin-right: 98px;
+    margin-bottom: 60px;
+}
 
 
 
@@ -473,7 +488,12 @@ p {
     .program-container {
         padding-left: 0px;
         padding-right: 0px;
-        margin-top: 200px;
+        
+    }
+
+    .program {
+        padding-top: 200px;
+        padding-left:0px;
     }
 
   
