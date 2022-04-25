@@ -1,7 +1,204 @@
-:root {
-  --background: #3e3f48;
-  --yellow: #fff800;
-  --orange: #ff9900;
-  --pink: #e5326b;
-  --lilac: #8d8bf3;
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
 }
+
+
+
+/*----------------- Colors ---------------*/
+
+:root {
+    --background: #3e3f48;
+    --yellow: #fff800;
+    --orange: #ff9900;
+    --pink: #e5326b;
+    --lilac: #8d8bf3;
+  }
+
+body{
+    
+    background-color: var(--background);
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+
+
+nav {
+    position: fixed; 
+    top: 0;
+    left: 0;
+    height: 100px;
+    width: 100%;
+    background-color: var(--nav-color);
+    z-index: 1; 
+    font-family: 'Inter', sans-serif; 
+    animation: fadeIn 1s ease-in;
+}
+
+nav .nav-bar{
+    position: relative;
+    height: 100%;
+    width: 100%;  
+    margin: 0 auto;
+    padding: 0 120px; 
+    display: flex;
+    align-items: center;
+    justify-content: space-between; 
+
+
+}
+
+nav .nav-bar .sidebarOpen{
+    color: var(--yellow);
+    font-size: 25px; 
+    padding: 5px; 
+    cursor: pointer; 
+    display: none; 
+}
+
+nav .nav-bar .logo img {
+    max-width: 200px;
+    padding-left: 10px;
+    padding-top: 70px;
+    z-index: 100;
+    
+    
+
+    
+}
+
+.menu .logo-toggle{
+  display: none; 
+}
+
+.side {
+    display: flex;
+}
+
+
+.nav-bar .nav-links{
+    display: flex;
+    animation: fadeInDown 2s;
+    margin-right: 20px;
+    padding-top: 70px;
+   
+}
+
+.nav-bar .nav-links li{
+    list-style: none; 
+    padding: 10px;
+    float: right;
+    border: 1px solid var(--yellow);
+    margin-left: 20px;
+}
+
+.nav-links li a{
+    
+    text-decoration: none; 
+    font-size: 15px;
+    font-weight: 300;
+    color: var(--yellow);
+    padding: 5px;
+   
+
+}
+    
+
+.nav-links li:hover {
+    transition: all 0.2s ease; 
+    background-color: var(--lilac);
+}
+
+
+
+@media (max-width: 1100px) {
+    nav .nav-bar{
+       
+        padding: 0 30px; 
+       
+    
+    }
+}
+
+
+
+
+@media (max-width: 790px) {
+
+    nav .nav-bar .sidebarOpen{
+        display: block ; 
+        padding-top: 60px;
+    
+        
+    }
+
+  
+    
+    .menu{
+        position: fixed;
+        height: 100%;
+        width: 190px;
+        left: -100%;
+        top: 0;
+        padding: 20px; 
+        background-color: var(--background);
+        z-index: 1; 
+        transition: all 0.4s ease; 
+    }
+
+    nav.active .menu{
+        left: -0%;
+        
+    }
+
+    .menu .logo-toggle{
+        display: block;
+        width: 100%;
+        display: flex;
+        align-items: center;
+        
+    }
+
+    .logo-toggle .sidebarClose{
+        color: var(--yellow);
+        font-size: 24px; 
+        cursor: pointer; 
+
+    }
+
+    nav .nav-bar .logo img {
+        max-width: 150px;
+        padding-left: 0px;
+        
+      
+    }
+
+
+    .nav-bar .nav-links{
+        flex-direction: column;
+        padding-top: 30px; 
+    }
+
+    .nav-links li a{
+        display: block;
+        margin-top: 20px; 
+    
+       
+    }
+
+    .nav-bar .nav-links li{
+      
+        padding: 0px;
+        
+        border: none;
+        margin-left: 0px;
+    }
+
+  
+
+    
+}
+
