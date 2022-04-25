@@ -1,0 +1,62 @@
+/* HUSK AT SLETTE :ROOT INDEN MERGE */
+
+:root {
+  --background: #3e3f48;
+  --yellow: #fff800;
+  --orange: #ff9900;
+  --pink: #e5326b;
+  --lilac: #8d8bf3;
+}
+
+body {
+  background-color: var(--background);
+}
+
+/* JULIE INDSÆTTER DET ORIGINALE BILLEDE I ASSETS FOLDER */
+
+#hero-img {
+  max-width: 100%;
+  max-height: 100%;
+
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.buttons {
+  display: flex;
+  flex-direction: row;
+  gap: 100px;
+
+  position: absolute;
+  bottom: 100px;
+  left: 520px;
+}
+
+.button-ticket {
+  background-color: var(--yellow);
+  padding: 18px 20px;
+
+  color: var(--background);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+.button-map {
+  border: solid 2px var(--yellow);
+  padding: 18px 20px;
+
+  color: var(--yellow);
+  font-family: "Inter", sans-serif;
+  font-weight: 400;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* :HOVER */
+.button-ticket:hover,
+.button-map:hover {
+  background-color: var(--lilac);
+}
