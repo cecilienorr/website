@@ -136,10 +136,9 @@ p {
 }
 
 .program-container p {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: var(--yellow);
   padding-right: 20px;
-  
 }
 
 .days {
@@ -406,7 +405,8 @@ a {
 
 /*----------------- Ticket Options ---------------*/
 
-.ticket-options {  display: grid;
+.ticket-options {
+  display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr;
   grid-auto-columns: 1fr;
@@ -423,28 +423,28 @@ a {
 }
 
 .ticket-options .top {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: rgb(155, 154, 154);
   font-size: 13px;
   padding-top: 20px;
 }
 
 .ticket-options .day {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: rgb(255, 255, 255);
   font-size: 20px;
   padding-top: 20px;
 }
 
 .ticket-options .price {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: rgb(255, 255, 255);
   font-size: 35px;
   padding-top: 20px;
 }
 
-.ticket-options .kob{
-  font-family: 'Inter';
+.ticket-options .kob {
+  font-family: "Inter";
   color: var(--lilac);
   font-size: 14px;
   padding-top: 10px;
@@ -456,40 +456,44 @@ a {
   margin-top: 30px;
 }
 
-.ticket-options .kob:hover{
+.ticket-options .kob:hover {
   background-color: rgba(199, 165, 236, 0.292);
 }
 
-.onsdag { 
+.onsdag {
   grid-area: onsdag;
   border: 1px solid var(--orange);
-   }
+}
 
-   .onsdag:hover {
-     background-color: rgba(220, 175, 143, 0.058);
-     cursor: pointer;
-   }
+.onsdag:hover {
+  background-color: rgba(220, 175, 143, 0.058);
+  cursor: pointer;
+}
 
-.torsdag { 
+.torsdag {
   grid-area: torsdag;
-  border: 1px solid var(--orange); }
+  border: 1px solid var(--orange);
+}
 
-.fredag { 
+.fredag {
   grid-area: fredag;
-  border: 1px solid var(--orange); }
+  border: 1px solid var(--orange);
+}
 
-.lordag { 
+.lordag {
   grid-area: lordag;
-  border: 1px solid var(--orange); }
+  border: 1px solid var(--orange);
+}
 
-.sondag { 
+.sondag {
   grid-area: sondag;
-  border: 1px solid var(--orange); }
+  border: 1px solid var(--orange);
+}
 
-.alle { 
-  grid-area:alle;
-  border: 1px solid var(--orange); }
-
+.alle {
+  grid-area: alle;
+  border: 1px solid var(--orange);
+}
 
 footer p {
   padding-top: 50px;
@@ -512,9 +516,10 @@ footer {
   }
 }
 
-@media (max-width: 1000px ) {
-  .ticket-options {  display: grid;
-    grid-template-columns: 1fr 1fr ;
+@media (max-width: 1000px) {
+  .ticket-options {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     gap: 15px 15px;
@@ -529,8 +534,6 @@ footer {
       "fredag lordag"
       "sondag alle";
   }
-
-
 
   .artist-program {
     display: grid;
@@ -547,17 +550,26 @@ footer {
     font-size: 10px;
     padding-bottom: 2px;
   }
-
-
-
 }
 
+/*-- MAP --*/
 
+.mapcontainer {
+  width: 50vw;
+  margin: auto;
+  padding: 15px;
 
+  margin-top: 20vh;
+}
 
-@media (max-width: 700px ) {
-  .ticket-options {  display: grid;
-    grid-template-columns: 1fr  ;
+.kort {
+  width: 50vw;
+}
+
+@media (max-width: 700px) {
+  .ticket-options {
+    display: grid;
+    grid-template-columns: 1fr;
     grid-template-rows: 1fr 1fr 1fr 1fr;
     grid-auto-columns: 1fr;
     gap: 15px 15px;
@@ -569,38 +581,43 @@ footer {
     text-align: center;
     grid-template-areas:
       "onsdag"
-       "torsdag"
-      "fredag" 
+      "torsdag"
+      "fredag"
       "lordag"
       "sondag"
-       "alle";
+      "alle";
   }
-
- 
-
 }
 
 @media (max-width: 680px) {
-  
-  
-.stor-scene, .mellem-scene, .lille-scene, .Beboerhus, .Teaterhuset, .Anemonen {
-  max-width: 500px;
-  overflow-x: scroll;
+  .stor-scene,
+  .mellem-scene,
+  .lille-scene,
+  .Beboerhus,
+  .Teaterhuset,
+  .Anemonen {
+    max-width: 500px;
+    overflow-x: scroll;
+  }
+
+  .days,
+  .times {
+    max-width: 500px;
+    overflow-x: scroll;
+  }
+
+  .kort {
+    width: 90vw;
+    margin-left: -20px;
+  }
+
+  .mapcontainer {
+    width: 50vw;
+    margin: 0;
+
+    margin-top: 20vh;
+  }
 }
-
-.days, .times {
-  max-width: 500px;
-  overflow-x: scroll;
-}
-
-}
-  
-
-
-
-
-
-
 
 @media (max-width: 790px) {
   nav .nav-bar .sidebarOpen {
@@ -667,5 +684,17 @@ footer {
 
     border: none;
     margin-left: 0px;
+  }
+
+  .kort {
+    width: 90vw;
+    margin-left: -20px;
+  }
+
+  .mapcontainer {
+    width: 50vw;
+    margin: 0;
+
+    margin-top: 20vh;
   }
 }
