@@ -136,9 +136,10 @@ p {
 }
 
 .program-container p {
-  font-family: "Inter";
+  font-family: 'Inter';
   color: var(--yellow);
   padding-right: 20px;
+  
 }
 
 .days {
@@ -528,7 +529,31 @@ footer {
       "fredag lordag"
       "sondag alle";
   }
+
+
+
+  .artist-program {
+    display: grid;
+    grid-template-columns: 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr 0.5fr;
+    grid-template-rows: 1fr;
+    grid-auto-columns: 1fr;
+    gap: 2px 15px;
+    grid-auto-flow: row;
+    font-family: "Inter";
+    grid-template-areas: "one two three four five six";
+  }
+
+  .times-list {
+    font-size: 10px;
+    padding-bottom: 2px;
+  }
+
+
+
 }
+
+
+
 
 @media (max-width: 700px ) {
   .ticket-options {  display: grid;
@@ -550,7 +575,32 @@ footer {
       "sondag"
        "alle";
   }
+
+ 
+
 }
+
+@media (max-width: 680px) {
+  
+  
+.stor-scene, .mellem-scene, .lille-scene, .Beboerhus, .Teaterhuset, .Anemonen {
+  max-width: 500px;
+  overflow-x: scroll;
+}
+
+.days, .times {
+  max-width: 500px;
+  overflow-x: scroll;
+}
+
+}
+  
+
+
+
+
+
+
 
 @media (max-width: 790px) {
   nav .nav-bar .sidebarOpen {
