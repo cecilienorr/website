@@ -1,131 +1,181 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <title>Vildskud | Festival for uafhængig scenekunst</title>
+    <meta
+      name="description"
+      content="Vildskud er Københavns festival for uafhængig scenekunst. Vær med, se med. Køb din billet her i dag »"
+    />
+    <script type="application/ld+json">
+      {
+        "@context": "https://schema.org",
+        "@type": "Event",
+        "organizer": "Vildskud",
+        "name": "Vildskud",
+        "description": "Vildskud er en festival for uafhængig scenekunst",
+        "image": "https://assets.codepen.io/8138703/Vildskud.webp",
+        "startDate": "2022-08-02T10:00",
+        "endDate": "2022-08-06T22:00",
+        "eventStatus": "https://schema.org/EventScheduled",
+        "eventAttendanceMode": "https://schema.org/OfflineEventAttendanceMode",
+        "location": {
+          "@type": "Place",
+          "name": "Festivalcentrum",
+          "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "Herjedalsgade",
+            "addressLocality": "Copenhagen",
+            "postalCode": "2300",
+            "addressCountry": "DK"
+          }
+        },
+        "performer": {
+          "@type": "TheaterGroup",
+          "name": "Vildskud"
+        },
+        "offers": [
+          {
+            "@type": "Offer",
+            "name": "Dagsbillet",
+            "price": "300",
+            "priceCurrency": "DKK",
+            "validFrom": "2022-04-27",
+            "url": "",
+            "availability": "https://schema.org/InStock"
+          },
+          {
+            "@type": "Offer",
+            "name": "Partoutbillet",
+            "price": "900",
+            "priceCurrency": "DKK",
+            "validFrom": "2022-04-27",
+            "url": "",
+            "availability": "https://schema.org/InStock"
+          }
+        ]
+      }
+    </script>
+  </head>
 
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <title>Vildskud - Forside</title>
-</head>
-
-<body>
+  <body>
     <header>
-        <nav>
-            <div class="nav-bar">
-                <i class='bx bx-menu-alt-left sidebarOpen'></i>
+      <nav>
+        <div class="nav-bar">
+          <i class="bx bx-menu-alt-left sidebarOpen"></i>
 
-                <div class="logo"><img src="/assets/vildskud-logo.png" alt="logo"></div>
+          <div class="logo">
+            <img src="/assets/vildskud-logo.png" alt="logo" />
+          </div>
 
-
-                <div class="side">
-                    <div class="menu">
-                        <div class="logo-toggle">
-
-                            <i class='bx bx-x sidebarClose'></i>
-                        </div>
-                        <ul class="nav-links">
-                            <li><a href="billetter.html">KOB BILLETTER</a></li>
-                            <li><a href="map.html">SE KORT</a></li>
-                            <li><a href="program.html">SE PROGRAM</a></li>
-
-                        </ul>
-                    </div>
-                </div>
+          <div class="side">
+            <div class="menu">
+              <div class="logo-toggle">
+                <i class="bx bx-x sidebarClose"></i>
+              </div>
+              <ul class="nav-links">
+                <li><a href="billetter.html">KOB BILLETTER</a></li>
+                <li><a href="map.html">SE KORT</a></li>
+                <li><a href="program.html">SE PROGRAM</a></li>
+              </ul>
             </div>
-        </nav>
+          </div>
+        </div>
+      </nav>
     </header>
 
     <main>
-        <article>
-            <section class="hero-section">
+      <article>
+        <section class="hero-section">
+          <img
+            id="hero-img"
+            src="/assets/herobackground.jpg"
+            alt="hero section image"
+          />
 
-                <img id="hero-img" src="/assets/herobackground.jpg" alt="hero section image">
+          <div class="buttons">
+            <a href="#">
+              <div class="button-map">SE KORT</div>
+            </a>
+            <a href="#">
+              <div class="button-ticket">KØB BILLETTER</div>
+            </a>
+          </div>
+        </section>
+      </article>
 
-                <div class="buttons">
-                    <a href="#">
-                        <div class="button-map">SE KORT</div>
-                    </a>
-                    <a href="#">
-                        <div class="button-ticket">KØB BILLETTER</div>
-                    </a>
-                </div>
-
-            </section>
-        </article>
-
-        <div class="container">
-            <div id="countdown">
-                <ul>
-                    <li><span id="days"></span>dage</li>
-                    <li><span id="hours"></span>timer</li>
-                    <li><span id="minutes"></span>minutter</li>
-                    <li><span id="seconds"></span>Sekunder</li>
-                </ul>
-            </div>
-            <div id="content" class="emoji">
-                <span>🥳</span>
-                <span>🎉</span>
-                <span>🎂</span>
-            </div>
+      <div class="container">
+        <div id="countdown">
+          <ul>
+            <li><span id="days"></span>dage</li>
+            <li><span id="hours"></span>timer</li>
+            <li><span id="minutes"></span>minutter</li>
+            <li><span id="seconds"></span>Sekunder</li>
+          </ul>
         </div>
+        <div id="content" class="emoji">
+          <span>🥳</span>
+          <span>🎉</span>
+          <span>🎂</span>
+        </div>
+      </div>
 
-        <article class="lineup-article">
-            <section class="box-1">
-                <h2>ONSDAG D. 29 JUNI</h2>
-                <p>TEATER TUNGE </p>
-                <div class="two-in-one">
-                    <p>ALT KØRER, IK</p>
-                    <p>LOUVRA</p>
-                </div>
-                <p>HVEM HAR INVITERET ODILE?</p>
-                <div class="two-in-one">
-                    <p class="h1-fill-1">EGOTRIP</p>
-                    <p class="h1-fill-2">MASKERET</p>
-                </div>
-            </section>
+      <article class="lineup-article">
+        <section class="box-1">
+          <h2>ONSDAG D. 29 JUNI</h2>
+          <p>TEATER TUNGE</p>
+          <div class="two-in-one">
+            <p>ALT KØRER, IK</p>
+            <p>LOUVRA</p>
+          </div>
+          <p>HVEM HAR INVITERET ODILE?</p>
+          <div class="two-in-one">
+            <p class="h1-fill-1">EGOTRIP</p>
+            <p class="h1-fill-2">MASKERET</p>
+          </div>
+        </section>
 
-            <section class="box-1">
-                <h2>TORSDAG D. 30 JUNI</h2>
-                <p>TEATER TUNGE </p>
-                <div class="two-in-one">
-                    <p>ALT KØRER, IK</p>
-                    <p>LOUVRA</p>
-                </div>
-                <p>HVEM HAR INVITERET ODILE?</p>
-                <div class="two-in-one">
-                    <p class="h1-fill-1">EGOTRIP</p>
-                    <p class="h1-fill-2">MASKERET</p>
-                </div>
-            </section>
+        <section class="box-1">
+          <h2>TORSDAG D. 30 JUNI</h2>
+          <p>TEATER TUNGE</p>
+          <div class="two-in-one">
+            <p>ALT KØRER, IK</p>
+            <p>LOUVRA</p>
+          </div>
+          <p>HVEM HAR INVITERET ODILE?</p>
+          <div class="two-in-one">
+            <p class="h1-fill-1">EGOTRIP</p>
+            <p class="h1-fill-2">MASKERET</p>
+          </div>
+        </section>
 
-            <section class="box-1">
-                <h2>ONSDAG D. 1 JULI</h2>
-                <p>TEATER TUNGE </p>
-                <div class="two-in-one">
-                    <p>ALT KØRER, IK</p>
-                    <p>LOUVRA</p>
-                </div>
-                <p>HVEM HAR INVITERET ODILE?</p>
-                <div class="two-in-one">
-                    <p class="h1-fill-1">EGOTRIP</p>
-                    <p class="h1-fill-2">MASKERET</p>
-                </div>
-            </section>
-
-        </article>
-
-
+        <section class="box-1">
+          <h2>ONSDAG D. 1 JULI</h2>
+          <p>TEATER TUNGE</p>
+          <div class="two-in-one">
+            <p>ALT KØRER, IK</p>
+            <p>LOUVRA</p>
+          </div>
+          <p>HVEM HAR INVITERET ODILE?</p>
+          <div class="two-in-one">
+            <p class="h1-fill-1">EGOTRIP</p>
+            <p class="h1-fill-2">MASKERET</p>
+          </div>
+        </section>
+      </article>
     </main>
 
     <footer></footer>
+  </body>
 
-
-</body>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </html>
