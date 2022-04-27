@@ -180,7 +180,7 @@ nav .nav-bar .logo img {
 }
 
 .buttons {
-  display: flex;
+  display: none;
   flex-direction: row;
   gap: 100px;
 
@@ -317,4 +317,68 @@ footer {
   font-size: 65px;
   font-family: Inter, sans-serif;
   -webkit-text-stroke: 0;
+}
+
+
+@media (max-width: 750px) {
+  .hero-section {
+    position: relative;
+    height: 60vh;
+    width: 100%;
+  }
+
+  #hero-img {
+    min-width: 100%;
+    min-height: 100%;
+  
+    display: block;
+   
+    margin-top: 200px;
+  }
+
+  body {
+    background-color: var(--background);
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  
+}
+
+@media (max-width: 790px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    position: absolute;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+  }
+
+  .button-ticket {
+    background-color: var(--yellow);
+    border: solid 2px var(--yellow);
+   
+  }
+  
+ 
+}
+
+
+@media (max-width: 700px) {
+  .hero-section {
+    position: relative;
+    height: 50vh;
+    width: 100%;
+  }
+
+}
+
+@media (max-width: 600px) {
+  .hero-section {
+    position: relative;
+    height: 40vh;
+    width: 100%;
+  }
+
 }
