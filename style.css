@@ -182,18 +182,25 @@ nav .nav-bar .logo img {
   display: none;
   flex-direction: row;
   gap: 100px;
-
   position: absolute;
   bottom: 5vw;
-  left: 36vw;
   justify-content: center;
+ 
+}
+
+.buttons-below  { 
+display: none;
+flex-direction: row;
+margin-top: 90px;
+justify-content: center;
+
 }
 
 .button-ticket {
   background-color: var(--yellow);
   padding: 18px 20px;
 
-  color: var(--background);
+  color: var(--lilac);
   font-family: "Inter", sans-serif;
   font-weight: 900;
 }
@@ -269,9 +276,7 @@ li span {
 
 /* DELETE WHEN FOOTER IS ADDED */
 
-footer {
-  margin-top: 200px;
-}
+
 
 /* LINEUP - FORSIDE */
 
@@ -341,6 +346,109 @@ footer {
   }
 }
 
+footer p {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  text-align: center;
+  font-size: 14px;
+  font-family: 'Inter';
+  color: var(--yellow);
+}
+
+footer {
+  border-top: 1px solid var(--yellow);
+  border-bottom: 1px solid var(--yellow);
+  margin-left: 98px;
+  margin-right: 98px;
+  margin-bottom: 60px;
+  margin-top: 50px;
+}
+
+
+@media (max-width: 1145px) {
+  .container {
+    color: var(--lilac);
+    margin: 100px 170px;
+   
+  }
+
+  li {
+    padding: 10px;
+  }
+}
+
+@media (max-width: 900px) {
+  .box-1 h2 {
+    font-size: 20px;
+  }
+
+  .box-1 .two-in-one p {
+    font-size: 40px;
+  }
+
+  .box-1 p{
+ font-size: 40px;
+  
+}
+
+.two-in-one {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+
+}
+
+@media (max-width: 815px) {
+  li {
+   
+    font-size: 15px;
+   
+    padding: 1em;
+  
+  }
+
+  .container {
+    margin-left: 100px;
+    margin-right: 100px;
+  }
+}
+
+
+
+
+@media (max-width: 790px) {
+  .buttons {
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+    position: absolute;
+    margin-left: 25vw;
+    
+
+   
+  }
+
+  .button-ticket {
+    background-color: var(--yellow);
+    border: solid 2px var(--yellow);
+   
+  }
+  
+ 
+}
+
+@media (max-width: 760px) {
+  .container {
+    margin-left: 60px;
+    margin-right: 60px;
+  }
+
+}
+
 @media (max-width: 750px) {
   .hero-section {
     position: relative;
@@ -365,28 +473,34 @@ footer {
   
 }
 
-@media (max-width: 790px) {
-  .buttons {
-    display: flex;
-    flex-direction: row;
-    gap: 30px;
-    position: absolute;
-    margin-left: auto;
-    margin-right: auto;
-    justify-content: center;
-  }
 
-  .button-ticket {
-    background-color: var(--yellow);
-    border: solid 2px var(--yellow);
-   
-  }
-  
- 
-}
 
 
 @media (max-width: 700px) {
+  .hero-section {
+    position: relative;
+    height: 56vh;
+    width: 100%;
+  }
+
+  .container {
+    color: var(--lilac);
+    
+   
+  }
+
+  
+
+  li {
+
+    padding-left: 0px;
+    
+   
+  }
+
+}
+
+@media (max-width: 600px) {
   .hero-section {
     position: relative;
     height: 50vh;
@@ -395,11 +509,128 @@ footer {
 
 }
 
-@media (max-width: 600px) {
-  .hero-section {
-    position: relative;
-    height: 40vh;
-    width: 100%;
+
+
+
+
+
+
+@media (max-width: 590px) {
+  .box-1 h2 {
+    font-size: 18px;
   }
 
+  .box-1 .two-in-one p {
+    font-size: 37px;
+  }
+
+  .box-1 p{
+ font-size:37px;
+  
 }
+
+.container {
+  margin-left: 20px;
+  margin-right: 20px;
+}
+
+li {
+  font-size: 13px;
+}
+
+.two-in-one {
+  display: flex;
+  gap: 20px;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.buttons {
+ 
+  margin-left: 24vw;
+  
+
+ 
+}
+
+
+}
+
+@media (max-width: 540px) {
+  .hero-section {
+    position: relative;
+    height: 45vh;
+    width: 100%;
+  }
+}
+
+@media (max-width: 500px) {
+  .buttons {
+ 
+    margin-left: 20vw;
+    font-size: 14px;
+    
+  
+   
+  }
+}
+
+@media (max-width: 450px) {
+  .box-1 h2 {
+    font-size: 15px;
+  }
+
+  .box-1 .two-in-one p {
+    font-size: 30px;
+  }
+
+  .box-1 p{
+ font-size:30px;
+  
+}
+
+.hero-section {
+  position: relative;
+  height: 30vh;
+  width: 100%;
+}
+
+.two-in-one {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+  cursor: default;
+}
+
+.buttons-below  { 
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  justify-content: center;
+  font-size: 14px;
+  
+  }
+
+  .buttons {
+    display: none;
+  }
+
+  .container {
+    margin-top: 50px;
+  }
+
+
+}
+
+@media (max-width: 385px) {
+  .buttons-below  { 
+ 
+    margin-top: 50px;
+   
+    
+    }
+}
+/*--cookies---*/
+
