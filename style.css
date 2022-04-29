@@ -35,6 +35,14 @@ nav {
   padding: 80px 0px;
 }
 
+.scenekunst {
+  font-family: 'Inter';
+  color: var(--yellow);
+  text-align: center;
+  padding-top: 50px;
+  font-size: 30px;
+}
+
 nav .nav-bar {
   position: relative;
   height: 100%;
@@ -228,7 +236,7 @@ a {
 
 .container {
   color: var(--lilac);
-  margin: 120px 300px;
+  margin: 50px 300px;
   text-align: center;
 
   font-family: Inter, sans-serif;
@@ -368,7 +376,7 @@ footer {
 @media (max-width: 1145px) {
   .container {
     color: var(--lilac);
-    margin: 100px 170px;
+    margin: 40px 170px;
    
   }
 
