@@ -568,28 +568,17 @@ footer {
 
 .h1-map {
   font-family: "Inter", sans-serif;
-  font-size: 1.5rem;
+  font-size: 1.7rem;
   color: var(--yellow);
   margin-bottom: 3vh;
 }
 
 .h2-map {
   font-family: "Inter", sans-serif;
-  font-size: 1rem;
+  font-size: 1.2rem;
   color: var(--yellow);
   margin-bottom: 1vh;
   margin-top: 2vh;
-}
-
-.time-container {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  grid-template-rows: 1fr 1fr;
-  grid-auto-columns: 1fr;
-  gap: 40px 40px;
-  grid-auto-flow: row;
-  line-height: 2;
-  margin-bottom: 15vh;
 }
 
 .icon-img {
@@ -599,13 +588,12 @@ footer {
 .googlemaps-link {
   font-family: "Inter", sans-serif;
   font-size: 1rem;
-  color: var(--pink);
+  color: var(--yellow);
   margin-bottom: 1vh;
   margin-top: 2vh;
   font-weight: 900;
   width: 10px;
   margin: auto;
-  margin-top: 2vh;
 }
 
 .googlemaps-link:hover {
@@ -614,6 +602,7 @@ footer {
 
 .googlemaps-container {
   margin-top: 2vh;
+  line-height: 2;
 }
 
 @media (max-width: 700px) {

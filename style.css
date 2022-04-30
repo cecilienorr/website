@@ -36,7 +36,7 @@ nav {
 }
 
 .scenekunst {
-  font-family: 'Inter';
+  font-family: "Inter";
   color: var(--yellow);
   text-align: center;
   padding-top: 50px;
@@ -193,15 +193,13 @@ nav .nav-bar .logo img {
   position: absolute;
   bottom: 5vw;
   justify-content: center;
- 
 }
 
-.buttons-below  { 
-display: none;
-flex-direction: row;
-margin-top: 90px;
-justify-content: center;
-
+.buttons-below {
+  display: none;
+  flex-direction: row;
+  margin-top: 90px;
+  justify-content: center;
 }
 
 .button-ticket {
@@ -284,8 +282,6 @@ li span {
 
 /* DELETE WHEN FOOTER IS ADDED */
 
-
-
 /* LINEUP - FORSIDE */
 
 .lineup-article {
@@ -359,7 +355,7 @@ footer p {
   padding-bottom: 50px;
   text-align: center;
   font-size: 14px;
-  font-family: 'Inter';
+  font-family: "Inter";
   color: var(--yellow);
 }
 
@@ -372,12 +368,10 @@ footer {
   margin-top: 50px;
 }
 
-
 @media (max-width: 1145px) {
   .container {
     color: var(--lilac);
     margin: 40px 170px;
-   
   }
 
   li {
@@ -394,29 +388,24 @@ footer {
     font-size: 40px;
   }
 
-  .box-1 p{
- font-size: 40px;
-  
-}
+  .box-1 p {
+    font-size: 40px;
+  }
 
-.two-in-one {
-  display: flex;
-  gap: 40px;
-  align-items: center;
-  justify-content: center;
-  cursor: default;
-}
-
-
+  .two-in-one {
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+  }
 }
 
 @media (max-width: 815px) {
   li {
-   
     font-size: 15px;
-   
+
     padding: 1em;
-  
   }
 
   .container {
@@ -425,9 +414,6 @@ footer {
   }
 }
 
-
-
-
 @media (max-width: 790px) {
   .buttons {
     display: flex;
@@ -435,18 +421,12 @@ footer {
     gap: 50px;
     position: absolute;
     margin-left: 25vw;
-    
-
-   
   }
 
   .button-ticket {
     background-color: var(--yellow);
     border: solid 2px var(--yellow);
-   
   }
-  
- 
 }
 
 @media (max-width: 760px) {
@@ -454,7 +434,6 @@ footer {
     margin-left: 60px;
     margin-right: 60px;
   }
-
 }
 
 @media (max-width: 750px) {
@@ -467,9 +446,9 @@ footer {
   #hero-img {
     min-width: 100%;
     min-height: 100%;
-  
+
     display: block;
-   
+
     margin-top: 200px;
   }
 
@@ -478,11 +457,7 @@ footer {
     padding-left: 0px;
     padding-right: 0px;
   }
-  
 }
-
-
-
 
 @media (max-width: 700px) {
   .hero-section {
@@ -493,19 +468,11 @@ footer {
 
   .container {
     color: var(--lilac);
-    
-   
   }
-
-  
 
   li {
-
     padding-left: 0px;
-    
-   
   }
-
 }
 
 @media (max-width: 600px) {
@@ -514,14 +481,7 @@ footer {
     height: 50vh;
     width: 100%;
   }
-
 }
-
-
-
-
-
-
 
 @media (max-width: 590px) {
   .box-1 h2 {
@@ -532,37 +492,30 @@ footer {
     font-size: 37px;
   }
 
-  .box-1 p{
- font-size:37px;
-  
-}
+  .box-1 p {
+    font-size: 37px;
+  }
 
-.container {
-  margin-left: 20px;
-  margin-right: 20px;
-}
+  .container {
+    margin-left: 20px;
+    margin-right: 20px;
+  }
 
-li {
-  font-size: 13px;
-}
+  li {
+    font-size: 13px;
+  }
 
-.two-in-one {
-  display: flex;
-  gap: 20px;
-  align-items: center;
-  justify-content: center;
-  cursor: default;
-}
+  .two-in-one {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+  }
 
-.buttons {
- 
-  margin-left: 24vw;
-  
-
- 
-}
-
-
+  .buttons {
+    margin-left: 24vw;
+  }
 }
 
 @media (max-width: 540px) {
@@ -575,12 +528,8 @@ li {
 
 @media (max-width: 500px) {
   .buttons {
- 
     margin-left: 20vw;
     font-size: 14px;
-    
-  
-   
   }
 }
 
@@ -593,32 +542,30 @@ li {
     font-size: 30px;
   }
 
-  .box-1 p{
- font-size:30px;
-  
-}
+  .box-1 p {
+    font-size: 30px;
+  }
 
-.hero-section {
-  position: relative;
-  height: 30vh;
-  width: 100%;
-}
+  .hero-section {
+    position: relative;
+    height: 30vh;
+    width: 100%;
+  }
 
-.two-in-one {
-  display: flex;
-  gap: 10px;
-  align-items: center;
-  justify-content: center;
-  cursor: default;
-}
+  .two-in-one {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    cursor: default;
+  }
 
-.buttons-below  { 
-  display: flex;
-  flex-direction: row;
-  gap: 20px;
-  justify-content: center;
-  font-size: 14px;
-  
+  .buttons-below {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+    justify-content: center;
+    font-size: 14px;
   }
 
   .buttons {
@@ -628,17 +575,11 @@ li {
   .container {
     margin-top: 50px;
   }
-
-
 }
 
 @media (max-width: 385px) {
-  .buttons-below  { 
- 
+  .buttons-below {
     margin-top: 50px;
-   
-    
-    }
+  }
 }
 /*--cookies---*/
-
